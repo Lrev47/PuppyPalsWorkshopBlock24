@@ -1,9 +1,9 @@
-import { useState } from 'react'
+// import { useState } from 'react'
 import './App.css'
-import {puppyList} from './data.js'
+import { puppyList } from './data.js'
 
 function App() {
-
+  console.log(puppyList)
 
   return (
     <>
@@ -13,4 +13,4 @@ function App() {
   )
 }
 
-
+export default App;
