@@ -1,0 +1,77 @@
+body{
+  background-image: linear-gradient(to right, #001228 , #001a3d);
+  color: white;
+}
+h1 {
+  position: absolute;
+  left: 0;
+  top: 20px; /* Adjust as needed */
+  width: 100%;
+  animation: slideAcross 5s linear infinite;
+  @keyframes slideAcross {
+    0% { 
+      transform: translateX(-100%); /* Start off-screen to the left */
+    }
+    100% {
+      transform: translateX(100%); /* End off-screen to the right */
+    }
+  }
+  
+}
+
+
+/* background of dog names and featured */
+#verticalView{
+  /* background-color: blue; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: center;
+  justify-items: center; 
+  align-items: center;
+}
+
+/* Name of dog things */
+.App {
+  background-image: linear-gradient(to right, #001d41 , #002c66);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-content: center;
+  justify-items: center; 
+  align-items: center;
+  align-self: center;
+  text-align: center;
+  font-size: 40px;
+  border-style: double;
+  border-color: black;
+  border-width: 15px;
+  padding: 10px;
+  width: 700px;   
+  height: 700px;  
+  border-radius: 25px;
+
+}
+/* featuredpupper */
+.pupCard{
+  background-image: linear-gradient(to right, #001d41 , #002c66);
+  align-content: center;
+  justify-items: center; 
+  align-items: center;
+  align-self: center;
+  text-align: center;
+  font-size: 55px;
+  width: 700px;   
+  height: 700px;
+  border-style: double;
+  border-color: black;
+  border-width: 15px;
+  padding: 10px;
+  border-radius: 25px;
+  text-decoration: none;
+}
+li{
+  list-style: none;
+  text-decoration: none;
+}
+ul{
+  text-decoration: none;
+}
