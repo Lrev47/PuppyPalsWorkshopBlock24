@@ -2,20 +2,33 @@ body{
   background-image: linear-gradient(to right, #001228 , #001a3d);
   color: white;
 }
+
+@keyframes slideAcross {
+  0% { 
+    transform: translateX(-1000px); /* Start off-screen to the left */
+  }
+  100% {
+    transform: translateX(2000px); /* End off-screen to the right */
+  }
+}
+
+#headerBanner{
+  height: 150px;
+  width: 500;
+  display: flex;
+  padding: 30px 30px;
+  margin-bottom: 20px;
+}
+
+
 h1 {
   position: absolute;
   left: 0;
-  top: 20px; /* Adjust as needed */
-  width: 100%;
-  animation: slideAcross 5s linear infinite;
-  @keyframes slideAcross {
-    0% { 
-      transform: translateX(-100%); /* Start off-screen to the left */
-    }
-    100% {
-      transform: translateX(100%); /* End off-screen to the right */
-    }
-  }
+  font-size: 100px;
+  top: 1px; 
+  width: 800px;
+  animation: slideAcross 10s linear infinite;
+ text-shadow: black 40px 20px 10px 10px;
   
 }
 
@@ -48,7 +61,7 @@ h1 {
   width: 700px;   
   height: 700px;  
   border-radius: 25px;
-
+  box-shadow: black 10px 8px;
 }
 /* featuredpupper */
 .pupCard{
@@ -67,6 +80,7 @@ h1 {
   padding: 10px;
   border-radius: 25px;
   text-decoration: none;
+  box-shadow: black 10px 8px;
 }
 li{
   list-style: none;

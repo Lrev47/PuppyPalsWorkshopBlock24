@@ -11,7 +11,9 @@ function App() {
   console.log(featuredPup)
 
   return (<div>
-    <h1>Puppy Pals!</h1>
+    <div id="headerBanner">
+      </div>
+      <h1>Puppy Pals!</h1>
     <div id="verticalView">
       <div className="App">
         {puppies.map((puppy) => (
